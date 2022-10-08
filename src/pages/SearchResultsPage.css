@@ -98,8 +98,8 @@
     flex-direction: column;
     align-items: center;
     padding: unset;
-    padding-top: 24px;
-    padding-bottom: 24px;
+    padding-top: 30px;
+    padding-bottom: 30px;
   }
   .searchPage__headerBody {
     width: 80%;
@@ -119,15 +119,12 @@
     /* margin-left: 20px; */
     margin: unset;
     margin-top: 12px;
-
   }
-}
-@media (max-width: 768px) {
 }
 
 @media (max-width: 550px) {
   .searchPage__options {
-    font-size: 12px;
+    font-size: 14px;
     flex-direction: column;
   }
   .searchPage__option {
@@ -135,6 +132,10 @@
   }
   .searchPage__option a {
     margin-left: 5px;
+  }
+  .searchPage__optionsLeft{
+    flex-wrap: wrap;
+    justify-content: center;
   }
   .searchPage__optionsRight {
     margin: unset;
