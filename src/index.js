@@ -10,7 +10,7 @@ import { StateProvider } from "./StateProvider.js";
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <Router>
-    <StateProvider initialState={initialState} reduce={reducer}>
+    <StateProvider initialState={initialState} reducer={reducer}>
       <App />
     </StateProvider>
   </Router>
