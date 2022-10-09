@@ -4,6 +4,9 @@ import { API_KEY } from "./keys.js";
 const CONTEXT_KEY = "b5caa024207b7457d";
 
 const useGoogleSearch = (term) => {
+  if (!term) {
+    term = "uhm";
+  }
   const [data, setData] = React.useState(null);
 
   useEffect(() => {

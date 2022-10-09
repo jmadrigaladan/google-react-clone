@@ -13,17 +13,12 @@ function Search({ hideButtons = false }) {
   const history = useHistory();
 
   const search = (e) => {
-    if (!input) {
-      history.push("/search");
-      return;
-    } else {
-      e.preventDefault();
-      dispatch({
-        type: actionTypes.SET_SEARCH_TERM,
-        term: input,
-      });
-      history.push("/search");
-    }
+    e.preventDefault();
+    dispatch({
+      type: actionTypes.SET_SEARCH_TERM,
+      term: input,
+    });
+    history.push("/search");
   };
 
   return (
