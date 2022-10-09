@@ -13,16 +13,15 @@ function Search({ hideButtons = false }) {
   const history = useHistory();
 
   const search = (e) => {
-    if (input == null) {
+    if (!input) {
       history.push("/search");
+      return;
     } else {
-      console.log(input);
       e.preventDefault();
       dispatch({
         type: actionTypes.SET_SEARCH_TERM,
         term: input,
       });
-      // do something witht the input... come back and fix
       history.push("/search");
     }
   };
